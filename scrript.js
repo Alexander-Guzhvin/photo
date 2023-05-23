@@ -32,7 +32,6 @@ const swiper = new Swiper('.mySwiper-reviews', {
 
 
 const swiper2 = new Swiper('.mySwiper-our-clients', {
-  centeredSlides: true,
   slidesPerView:1,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -40,14 +39,36 @@ const swiper2 = new Swiper('.mySwiper-our-clients', {
   },
   breakpoints: {// настройки для разных разрешений
     768: {
-      slidesPerView:6,
+      slidesPerView:7,
     }
 }
 });
 
+const swiper3 = new Swiper('.mySwiper-popup', {
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 
-
+const swiper4 = new Swiper('.swiper-famaly', {
+  loop: true,
+  slidesPerView:2,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {// настройки для разных разрешений
+    768: {
+      slidesPerView:10,
+    }
+  }
+});
 
 
 
